@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+body {
+    background: #28282b;
+    margin: 0;
+    font-family: koulen;
+    color: rgb(202, 207, 219);
+}
+
+.navbar {
+    padding-top: 1em;
+    padding-left: 1em;
+    .name {
+        text-decoration: none;
+        font-weight: bold;
+        color: rgba(39, 155, 97, 0.865);
+        font-size: 30pt;
+        span {
+            color:rgb(199, 199, 199);
+            font-style: italic;
+        }
+
+    }
+
+    nav {
+        display: none;
+    }
+    
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+    }
+}
+
+
+
