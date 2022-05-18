@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 
+:root {
+    --primary-color: rgb(39, 155, 97);
+}
 body {
     background: #28282b;
     margin: 0;
@@ -7,23 +10,23 @@ body {
     color: rgb(202, 207, 219);
 }
 
+nav {
+    display: none;
+}
+
 .navbar {
-    padding-top: 1em;
-    padding-left: 1em;
+    padding: 1em 2em 1em 2em;
+
     .name {
         text-decoration: none;
         font-weight: bold;
-        color: rgba(39, 155, 97, 0.865);
+        color: rgb(199, 199, 199);
         font-size: 30pt;
         span {
-            color:rgb(199, 199, 199);
+            color:var(--primary-color) ;
             font-style: italic;
         }
 
-    }
-
-    nav {
-        display: none;
     }
     
     .container {
@@ -36,5 +39,124 @@ body {
     }
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+}
 
+section {
+    padding: 2em 3em;
+}
 
+.mid {
+    text-align: center;
+    background-color: white;
+    padding: 2em 0em;
+    margin: 0em;
+}
+
+.fst-col {
+    
+    .subhead {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: black;
+        letter-spacing: .1em;
+
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--primary-color); 
+        letter-spacing: .2em;
+        font-size: 28pt;
+        margin-top: 0em;
+    }
+}
+
+.in-col, .fst-col, .snd-col {
+    display: inline-block;
+}
+
+.GGG {
+    width: 50%;
+    height: auto;
+}
+
+.JCC {
+    width: 110%;
+    height: auto;
+    padding-right: 1em;
+}
+a {
+    color: var(--primary-color)
+}
+
+.box-list {
+    h2 {
+        text-align: center;
+        font-size: 14pt;
+        letter-spacing: 0.02em;
+        font-weight: 100;
+    }
+}
+.l1 {
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--primary-color);
+
+    &:hover {
+        font-size: larger;
+        font-style: italic;
+        font-weight: bold;
+    }
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+}
+
+nav.menu-btn {
+    display: block;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background-color: #28282b;
+    height: 100vh;
+    padding: 1em;
+
+    ul.primary-nav {
+        margin-top: 5em;
+    }
+
+    li {
+       a {
+           text-decoration: none;
+           display: block;
+           padding: .5em;
+           font-size: 1.2em;
+           text-align: right;
+
+            &:hover {
+                font-weight: bold;
+            }
+       }
+    }
+    
+}
+
+.mobile-exit {
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}

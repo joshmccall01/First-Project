@@ -4,13 +4,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PressureFighter</title>
+        <title>ThePressureFighter</title>
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <div class="navbar">
             <div class="container">
-                <a class="name" href="index.html">Pressure<span> Fighter</span></a>
+                <a class="name" href="index.html">The <span>Pressure</span> Fighter</span></a>
 
                 <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Navigation">
 
@@ -31,11 +31,14 @@
         </div>
         <section class="mid" >
             <div class="container">
-                <div class="1st-col">
-                    <p class="subhead">Subtle Defense. Heavy Hands. Calculated Aggression.</p>
-                    <h1>A Pressure Fighting Masterclass</h1>
+                <div class="in-col">
+                    <img id="JCC" class="JCC" src="images/JCC.svg" alt="Julio Cesar Chavez">
                 </div>
-                <div class="2nd-col">
+                <div class="fst-col">
+                    <p class="subhead">Subtle Defense. Heavy Hands. Calculated Aggression.</p>
+                    <h1>Master Pressure Fighting</h1>
+                </div>
+                <div class="snd-col">
                     <img id="GGG" class="GGG" src="images/GGG.svg" alt="Pic of Gennady Golovkin, middleweight world champion">
                 </div>
             </div>
@@ -43,6 +46,7 @@
         <section class="box-list">
             <div class="container">
                 <div class="col1">
+                    <h2>Click for more information about these pressure fighters!</h2>
                     <ul>
                         <li><a class="l1" href="https://boxrec.com/media/index.php/Julio_Cesar_Chavez" target="_blank">Julio César Chávez</a></li>
                         <li><a class="l1" href="https://boxrec.com/media/index.php/Marvin_Hagler" target="_blank">Marvin Hagler</a></li>
@@ -66,6 +70,19 @@
                 </div>
             </div>
         </section>
+
+        <script>
+            const mobileBtn = document.getElementById('mobile-cta')
+                  nav = document.querySelector('nav')
+                  mobileBtnExit = document.getElementById('mobile-exit');
+
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menu-btn');
+            })
+            mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menu-btn');
+            })
+        </script>
     </body>
     
 </html>
