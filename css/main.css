@@ -22,7 +22,7 @@ nav {
   text-decoration: none;
   font-weight: bold;
   color: #c7c7c7;
-  font-size: 30pt;
+  font-size: 25pt;
 }
 
 .navbar .name span {
@@ -76,17 +76,13 @@ section {
   margin-top: 0em;
 }
 
-.in-col, .fst-col, .snd-col {
-  display: inline-block;
-}
-
 .GGG {
   width: 50%;
   height: auto;
 }
 
 .JCC {
-  width: 110%;
+  width: 50%;
   height: auto;
   padding-right: 1em;
 }
@@ -154,5 +150,78 @@ nav li a:hover {
   float: right;
   margin: .5em;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 800px) {
+  .mobile-exit, .mobile-menu {
+    display: none;
+  }
+  .navbar.container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    font-size: 1.5em;
+    padding: .1em .1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+  .name {
+    padding-right: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .box-list {
+    padding-top: 0;
+  }
+  .box-list h2 {
+    font-size: 18pt;
+  }
+  .box-list .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .box-list .container .col1, .box-list .container .col2, .box-list .container .col3 {
+    display: inline-block;
+  }
+  .box-list .container .col1 {
+    margin-left: 10%;
+  }
+  .box-list .container .col3 {
+    margin-right: 10%;
+  }
+  .box-list .container a {
+    font-size: 15pt;
+    line-height: 2em;
+  }
 }
 /*# sourceMappingURL=main.css.map */

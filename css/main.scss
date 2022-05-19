@@ -16,17 +16,16 @@ nav {
 
 .navbar {
     padding: 1em 2em 1em 2em;
-
+    
     .name {
         text-decoration: none;
         font-weight: bold;
         color: rgb(199, 199, 199);
-        font-size: 30pt;
+        font-size: 25pt;
         span {
             color:var(--primary-color) ;
             font-style: italic;
         }
-
     }
     
     .container {
@@ -78,17 +77,13 @@ section {
     }
 }
 
-.in-col, .fst-col, .snd-col {
-    display: inline-block;
-}
-
 .GGG {
     width: 50%;
     height: auto;
 }
 
 .JCC {
-    width: 110%;
+    width: 50%;
     height: auto;
     padding-right: 1em;
 }
@@ -114,6 +109,7 @@ a {
         font-style: italic;
         font-weight: bold;
     }
+    
 }
 
 iframe {
@@ -159,4 +155,69 @@ nav {
     float: right;
     margin: .5em;
     cursor: pointer;
+}
+
+@media only screen and (min-width: 800px) {
+    .mobile-exit, .mobile-menu {
+        display: none;
+    }
+
+    .navbar.container {
+        display: grid;
+        grid-template-columns: 180px auto;
+    }
+    .navbar nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        ul {
+            display: flex;
+        }
+
+        a {
+            font-size: 1.5em;
+            padding: .1em .1em;
+        }
+
+        ul.primary-nav {
+            margin: 0;
+        }
+        li.current a {
+            font-weight: bold;
+        }
+    }
+    .name {
+        padding-right: 3em;
+        display: flex;
+    }
+
+    .box-list {
+        
+        padding-top: 0;
+        h2 {
+            font-size: 18pt;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            .col1, .col2, .col3 {
+                display: inline-block;
+            }
+            .col1 {
+                margin-left: 10%;
+            }
+            .col3 {
+                margin-right: 10%;
+            }
+            a {
+                font-size: 15pt;
+                line-height: 2em;
+            }
+        }
+    }   
 }
