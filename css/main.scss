@@ -78,14 +78,13 @@ section {
 }
 
 .GGG {
-    width: 50%;
-    height: auto;
+    width: auto;
+    height: 20em;
 }
 
 .JCC {
-    width: 50%;
-    height: auto;
-    padding-right: 1em;
+    width: auto;
+    height: 20em;
 }
 a {
     color: var(--primary-color)
@@ -157,14 +156,14 @@ nav {
     cursor: pointer;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
     .mobile-exit, .mobile-menu {
         display: none;
     }
 
     .navbar.container {
         display: grid;
-        grid-template-columns: 180px auto;
+        grid-template-columns: 200px auto;
     }
     .navbar nav {
         display: flex;
@@ -180,19 +179,20 @@ nav {
         }
 
         a {
-            font-size: 1.5em;
-            padding: .1em .1em;
+            font-size: 1.4em;
+            padding: .05em .5em;
         }
 
         ul.primary-nav {
             margin: 0;
         }
+
         li.current a {
             font-weight: bold;
         }
     }
     .name {
-        padding-right: 3em;
+        padding-right: 3.5em;
         display: flex;
     }
 
@@ -220,4 +220,15 @@ nav {
             }
         }
     }   
+    .in-col, .fst-col, .snd-col {
+        display: inline-block;
+    }
+    .GGG, .JCC {
+        height: 24em;
+        width: auto;
+        margin: 0;
+    }
+    .fst-col {
+        margin: 0 1em;
+    }
 }

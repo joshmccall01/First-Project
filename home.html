@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ThePressureFighter</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container">
+                <a class="name" href="home.html">The <span>Pressure</span> Fighter</span></a>
+
+                <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Navigation">
+
+                <nav>
+                    <img id="mobile-exit" class="mobile-exit" src="images/x.svg">
+                    <ul class="primary-nav">
+                        <li><a class="current" href="home.html">Home</a></li>
+                        <li><a href="foundation.html">Foundation</a></li>
+                        <li><a href="punching.html">Punching</a></li>
+                        <li><a href="defense.html">Defense</a></li>
+                        <li><a href="pressure.html">Pressure</a></li>
+                        <li><a href="s&c.html">S&amp;C</a></li>
+                        <li><a href="strategy.html">Strategy</a></li>
+                    </ul>
+                
+                </nav>
+            </div>
+        </div>
+        <section class="mid" >
+            <div class="container">
+                <div class="in-col">
+                    <img id="JCC" class="JCC" src="images/JCC.svg" alt="Julio Cesar Chavez">
+                </div>
+                <div class="fst-col">
+                    <div class="txt">
+                    <p class="subhead">Subtle Defense. Heavy Hands. Calculated Aggression.</p>
+                    <h1>Master Pressure Fighting</h1>
+                    </div>
+                </div>
+                <div class="snd-col">
+                    <img id="GGG" class="GGG" src="images/GGG.svg" alt="Pic of Gennady Golovkin, middleweight world champion">
+                </div>
+            </div>
+        </section>
+        <section class="box-list">
+            <h2>Click for more information about these champion pressure fighters!</h2>
+            <div class="container">
+                <div class="col1">
+                    <ul>
+                        <li><a class="l1" href="https://boxrec.com/media/index.php/Julio_Cesar_Chavez" target="_blank">Julio César Chávez</a></li>
+                        <li><a class="l1" href="https://boxrec.com/media/index.php/Marvin_Hagler" target="_blank">Marvin Hagler</a></li>
+                        <li><a class="l1" href="https://boxrec.com/media/index.php/Rocky_Marciano" target="_blank">Rocky Marciano</a></li>
+                        <li><a class="l1" href="https://boxrec.com/media/index.php/Aaron_Pryor" target="_blank">Aaron Pryor</a></li>
+                    </ul>
+                </div>
+                <div class="col2">
+                    <ul>
+                        <li><a class="l1" href="https://boxrec.com/media/index.php/Joe_Frazier" target="_blank">Joe Frazier</a></li>
+                        <li><a class="l1" href="https://boxrec.com/media/index.php/Roberto_Duran" target="_blank">Roberto Durán</a></li>
+                        <li><a class="l1" href="https://boxrec.com/media/index.php/Antonio_Margarito" target="_blank">Antonio Margarito</a></li>
+                        <li><a class="l1" href="https://boxrec.com/media/index.php/Kostya_Tszyu" target="_blank">Kostya Tsyzu</a></li>
+                    </ul>
+                </div>
+                <div class="col3">
+                    <ul>
+                        <li><a class="l1" href="https://boxrec.com/media/index.php/Gennady_Golovkin" target="_blank">Gennady Golovkin</a></li>
+                        <li><a class="l1" href="https://boxrec.com/media/index.php/Micky_Ward" target="_blank">Mickey Ward</a></li>
+                        <li><a class="l1" href="https://boxrec.com/media/index.php/Roman_Gonzalez" target="_blank">Román González</a></li>
+                        <li><a class="l1" href="https://boxrec.com/media/index.php/Ricky_Hatton" target="_blank">Ricky Hatton</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            const mobileBtn = document.getElementById('mobile-cta')
+                  nav = document.querySelector('nav')
+                  mobileBtnExit = document.getElementById('mobile-exit');
+
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menu-btn');
+            })
+            mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menu-btn');
+            })
+        </script>
+    </body>
+    
+</html>

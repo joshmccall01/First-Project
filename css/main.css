@@ -77,14 +77,13 @@ section {
 }
 
 .GGG {
-  width: 50%;
-  height: auto;
+  width: auto;
+  height: 20em;
 }
 
 .JCC {
-  width: 50%;
-  height: auto;
-  padding-right: 1em;
+  width: auto;
+  height: 20em;
 }
 
 a {
@@ -152,15 +151,15 @@ nav li a:hover {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   .mobile-exit, .mobile-menu {
     display: none;
   }
   .navbar.container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 180px auto;
-        grid-template-columns: 180px auto;
+    -ms-grid-columns: 200px auto;
+        grid-template-columns: 200px auto;
   }
   .navbar nav {
     display: -webkit-box;
@@ -181,8 +180,8 @@ nav li a:hover {
     display: flex;
   }
   .navbar nav a {
-    font-size: 1.5em;
-    padding: .1em .1em;
+    font-size: 1.4em;
+    padding: .05em .5em;
   }
   .navbar nav ul.primary-nav {
     margin: 0;
@@ -191,7 +190,7 @@ nav li a:hover {
     font-weight: bold;
   }
   .name {
-    padding-right: 3em;
+    padding-right: 3.5em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -222,6 +221,17 @@ nav li a:hover {
   .box-list .container a {
     font-size: 15pt;
     line-height: 2em;
+  }
+  .in-col, .fst-col, .snd-col {
+    display: inline-block;
+  }
+  .GGG, .JCC {
+    height: 24em;
+    width: auto;
+    margin: 0;
+  }
+  .fst-col {
+    margin: 0 1em;
   }
 }
 /*# sourceMappingURL=main.css.map */
