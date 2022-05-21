@@ -15,7 +15,7 @@ nav {
 }
 
 .navbar {
-    padding: 1em 2em 1em 2em;
+    padding: 2em 2em 1em 2em;
     
     .name {
         text-decoration: none;
@@ -53,8 +53,9 @@ section {
 .mid {
     text-align: center;
     background-color: white;
-    padding: 2em 0em;
-    margin: 0em;
+    padding: 1em 0em;
+    margin: 0;
+    padding: 2em 0;
 }
 
 .fst-col {
@@ -73,7 +74,7 @@ section {
         color: var(--primary-color); 
         letter-spacing: .2em;
         font-size: 28pt;
-        margin-top: 0em;
+        margin: 0;
     }
 }
 
@@ -141,7 +142,6 @@ nav {
            padding: .5em;
            font-size: 1.2em;
            text-align: right;
-
             &:hover {
                 font-weight: bold;
             }
@@ -154,6 +154,19 @@ nav {
     float: right;
     margin: .5em;
     cursor: pointer;
+}
+
+.about {
+    display: flex;
+    justify-content:space-evenly;
+    background-color: white;
+    .RD {
+        width: 20em;
+        height: auto;
+    }
+    .description {
+        color:black;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -205,9 +218,6 @@ nav {
         .container {
             display: flex;
             justify-content: space-between;
-            .col1, .col2, .col3 {
-                display: inline-block;
-            }
             .col1 {
                 margin-left: 10%;
             }
@@ -219,10 +229,17 @@ nav {
                 line-height: 2em;
             }
         }
-    }   
-    .in-col, .fst-col, .snd-col {
-        display: inline-block;
     }
+    
+    .mid {
+        .container {
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            padding: 3em 0;
+        }
+    }
+    
     .GGG, .JCC {
         height: 24em;
         width: auto;
@@ -231,4 +248,5 @@ nav {
     .fst-col {
         margin: 0 1em;
     }
+    
 }

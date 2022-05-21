@@ -15,7 +15,7 @@ nav {
 }
 
 .navbar {
-  padding: 1em 2em 1em 2em;
+  padding: 2em 2em 1em 2em;
 }
 
 .navbar .name {
@@ -56,8 +56,9 @@ section {
 .mid {
   text-align: center;
   background-color: white;
-  padding: 2em 0em;
-  margin: 0em;
+  padding: 1em 0em;
+  margin: 0;
+  padding: 2em 0;
 }
 
 .fst-col .subhead {
@@ -73,7 +74,7 @@ section {
   color: var(--primary-color);
   letter-spacing: .2em;
   font-size: 28pt;
-  margin-top: 0em;
+  margin: 0;
 }
 
 .GGG {
@@ -151,6 +152,25 @@ nav li a:hover {
   cursor: pointer;
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: white;
+}
+
+.about .RD {
+  width: 20em;
+  height: auto;
+}
+
+.about .description {
+  color: black;
+}
+
 @media only screen and (min-width: 1000px) {
   .mobile-exit, .mobile-menu {
     display: none;
@@ -209,9 +229,6 @@ nav li a:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .box-list .container .col1, .box-list .container .col2, .box-list .container .col3 {
-    display: inline-block;
-  }
   .box-list .container .col1 {
     margin-left: 10%;
   }
@@ -222,8 +239,17 @@ nav li a:hover {
     font-size: 15pt;
     line-height: 2em;
   }
-  .in-col, .fst-col, .snd-col {
-    display: inline-block;
+  .mid .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3em 0;
   }
   .GGG, .JCC {
     height: 24em;
