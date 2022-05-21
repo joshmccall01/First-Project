@@ -169,6 +169,14 @@ nav {
     }
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+    height: 10px;
+    align-items: center;
+}
+
 @media only screen and (min-width: 1000px) {
     .mobile-exit, .mobile-menu {
         display: none;
@@ -181,11 +189,12 @@ nav {
     .navbar nav {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         background: none;
         position: unset;
         height: auto;
         width: 100%;
-        padding: 0;
+        padding: 0 40px 0 40px;
 
         ul {
             display: flex;
@@ -205,8 +214,8 @@ nav {
         }
     }
     .name {
-        padding-right: 3.5em;
-        display: flex;
+        width: 45%;
+        
     }
 
     .box-list {
@@ -218,6 +227,7 @@ nav {
         .container {
             display: flex;
             justify-content: space-between;
+            padding: 2em 0;
             .col1 {
                 margin-left: 10%;
             }
@@ -249,4 +259,9 @@ nav {
         margin: 0 1em;
     }
     
+}
+
+.temp-filler {
+    background: white;
+    color: black;
 }
