@@ -47,4 +47,5 @@ The CSS was more difficult as it involves a lot more fine tuning and subtle twee
 <img src="images/Home_m.png" width="35%" alt="Home mobile"><br>
 <img src="images/Menu_m.png" width="35%" alt="Mobile menu"><br>
      
-     
+## Next Steps
+I now need to add content to the other pages.
