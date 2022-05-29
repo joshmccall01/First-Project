@@ -37,3 +37,14 @@ The CSS was more difficult as it involves a lot more fine tuning and subtle twee
 
 ## The Final Design
 
+### Web Design:
+
+<img src="images/Home.png" width="60%" alt="Home 1"><br>
+<img src="images/Home-2.png" width="60%" alt="Home 2"><br>
+<img src="images/Other-Pages.png" width="60%" alt="Other Pages"><br>
+
+### Mobile Design:
+<img src="images/Home_m.png" width="35%" alt="Home mobile"><br>
+<img src="images/Menu_m.png" width="35%" alt="Mobile menu"><br>
+     
+     
